@@ -84,6 +84,7 @@ class LoginActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         intent.putExtra("city", city)
         intent.putExtra("gender", selectedGender.text.toString())
         startActivity(intent)
+        finish()
     }
 
     override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
